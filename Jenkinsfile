@@ -36,6 +36,7 @@ pipeline {
           //iqScanPatterns: [[scanPattern: '**'], [scanPattern: '!*.zip']]
           // el de abajo funcionando con mis cambios
           //iqScanPatterns: [ [scanPattern: '**'], [scanPattern: '!/*.zip']] 
+          enableDebugLogging : true,
           iqScanPatterns: [
             [scanPattern: '**'],
             [scanPattern: '!*.zip']
