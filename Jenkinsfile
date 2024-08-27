@@ -44,6 +44,7 @@ pipeline {
           failBuildOnNetworkError: true,
           callflow: [
             enable: true,
+            timeout: '10 minutes',
             logLevel: DEBUG,
             entrypointStrategy: [
               $class: 'NamedStrategy',
