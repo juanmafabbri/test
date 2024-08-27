@@ -9,7 +9,7 @@ public class MyApp {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
 
-        logger.info("Hello, World! %d", 10);
+        logger.info("Hello, World! {}", 10);
 
         System.out.println("more text");
         //final StringSubstitutor interpolator = StringSubstitutor.createInterpolator();
