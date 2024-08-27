@@ -44,6 +44,7 @@ pipeline {
           failBuildOnNetworkError: true,
           callflow: [
             enable: true,
+            logLevel: DEBUG,
             entrypointStrategy: [
               $class: 'NamedStrategy',
               name: 'JAVA_MAIN'
