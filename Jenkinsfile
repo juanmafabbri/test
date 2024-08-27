@@ -37,7 +37,7 @@ pipeline {
           // el de abajo funcionando con mis cambios
           //iqScanPatterns: [ [scanPattern: '**'], [scanPattern: '!/*.zip']] 
           iqScanPatterns: [
-            [scanPattern: 'pom.xml'],
+            [scanPattern: '**'],
             [scanPattern: '!*.zip']
           ],
           failBuildOnNetworkError: true,
