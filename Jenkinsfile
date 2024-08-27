@@ -45,7 +45,7 @@ pipeline {
           callflow: [
             enable: true,
             timeout: '10 minutes',
-            logLevel: DEBUG,
+            logLevel: 'DEBUG',
             entrypointStrategy: [
               $class: 'NamedStrategy',
               name: 'JAVA_MAIN'
