@@ -19,7 +19,7 @@ pipeline {
 
         sh 'java -version'
         //sh 'mvn -B -DskipTests clean package'                 
-        //sh 'mvn -B -DskipTests clean install dependency:copy-dependencies'
+        sh 'mvn -B -DskipTests clean install dependency:copy-dependencies'
 
         nexusPolicyEvaluation iqStage: 'build', iqApplication: 'testapp',
           //el de abajo funcionando con mis cambios
@@ -37,7 +37,7 @@ pipeline {
           // el de abajo funcionando con mis cambios
           //iqScanPatterns: [ [scanPattern: '**'], [scanPattern: '!/*.zip']] 
           iqScanPatterns: [
-            [scanPattern: '**'],
+            [scanPattern: 'pom.xml'],
             [scanPattern: '!*.zip']
           ],
           failBuildOnNetworkError: true,
