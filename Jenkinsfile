@@ -6,7 +6,7 @@ pipeline {
       // Get some code from a GitHub repository
       //   git branch: 'main', url: 'https://github.com/hardeepsonatype/zippedtest.git', skipTag: true, shallow: true
       steps {
-        git branch: 'main', url: 'https://github.com/gvazquezmorean/test'
+        git branch: 'main', url: 'https://github.com/juanmafabbri/test'
       }
 
     }
