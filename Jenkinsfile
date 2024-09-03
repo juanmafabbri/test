@@ -38,7 +38,8 @@ pipeline {
           //iqScanPatterns: [ [scanPattern: '**'], [scanPattern: '!/*.zip']] 
           iqScanPatterns: [
             [scanPattern: '**'],
-            [scanPattern: '!*.zip']
+            //[scanPattern: '!*.zip']
+            [scanPattern: '**/module.xml']
           ],
           failBuildOnNetworkError: true,
           callflow: [
