@@ -21,7 +21,7 @@ pipeline {
         //sh 'mvn -B -DskipTests clean package'                 
         sh 'mvn -B -DskipTests clean install dependency:copy-dependencies'
 
-        nexusPolicyEvaluation iqStage: 'build', iqApplication: 'testdata',
+        nexusPolicyEvaluation iqStage: 'build', iqApplication: 'testapp',
           //el de abajo funcionando con mis cambios
           //iqScanPatterns: [[scanPattern: '**'], [scanPattern: '!*.zip']]
           //iqScanPatterns: [[scanPattern: '**'], [scanPattern: ' '], [scanPattern: '!*.zip']]
