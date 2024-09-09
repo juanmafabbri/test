@@ -37,9 +37,9 @@ pipeline {
           // el de abajo funcionando con mis cambios
           //iqScanPatterns: [ [scanPattern: '**'], [scanPattern: '!/*.zip']] 
           iqScanPatterns: [
-            //[scanPattern: '**/sonatype-clm/module.xml'],
+            [scanPattern: '**/sonatype-clm/module.xml'],
             //[scanPattern: '!*.zip']
-            [scanPattern: '**l']
+            [scanPattern: '**']
           ],
           failBuildOnNetworkError: true,
           callflow: [
