@@ -43,7 +43,7 @@ pipeline {
           ],
           failBuildOnNetworkError: true,
           callflow: [
-            enable: true,
+            enable: false,
             timeout: '10 minutes',
             logLevel: 'DEBUG',
             entrypointStrategy: [
