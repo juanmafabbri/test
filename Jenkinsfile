@@ -48,6 +48,9 @@ pipeline {
             enable: true,
             timeout: '10 minutes',
             logLevel: 'DEBUG',
+            includes: [
+              '**/target/*.jar'
+            ],
             entrypointStrategy: [
               $class: 'NamedStrategy',
               name: 'JAVA_MAIN'
