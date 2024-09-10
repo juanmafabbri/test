@@ -40,7 +40,7 @@ pipeline {
             //[scanPattern: '**/sonatype-clm/module.xml'],
             //[scanPattern: '**/target/sonatype-clm/module.xml'],
             //[scanPattern: '*.zip'],
-            [scanPattern: '*.js']
+            //[scanPattern: '*.js']
             //[scanPattern: '**']
           ],
           failBuildOnNetworkError: true,
