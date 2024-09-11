@@ -22,7 +22,7 @@ pipeline {
 
         nexusPolicyEvaluation iqStage: 'build', iqApplication: 'testapp',
           iqScanPatterns: [
-            '**/pom.xml'
+            [scanPattern: '*.zip']
           ],
           failBuildOnNetworkError: true,
           callflow: [
