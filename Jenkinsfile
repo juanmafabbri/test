@@ -22,6 +22,7 @@ pipeline {
 
         nexusPolicyEvaluation iqStage: 'build', iqApplication: 'testapp',
           iqScanPatterns: [
+            '**/pom.xml'
           ],
           failBuildOnNetworkError: true,
           callflow: [
